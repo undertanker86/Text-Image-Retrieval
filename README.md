@@ -3,6 +3,7 @@
 ## Overview
 
 This project implements an image retrieval system using both traditional methods and advanced deep learning techniques. The system allows users to input a query image and retrieve similar images from a dataset. The project also includes tools for dataset creation, processing, and management using vector databases for efficient image searches.
+![image](https://drive.google.com/file/d/17nVueUnoU3teddWiFlEKEAiusaJw_fNz/view?usp=sharing)
 
 ## Features
 
