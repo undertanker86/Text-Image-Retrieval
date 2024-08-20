@@ -1,35 +1,30 @@
-# Drafting the README.md content based on the summaries above
+# Image Retrieval Project
 
-readme_content = """
-# Image Embedding and Retrieval System
+## Overview
 
-This repository contains three Python scripts (`Embedding.py`, `Traditional.py`, and `VectorDatabase.py`) that are used for generating image embeddings, processing images, and querying against a vector database. These scripts can be used together to create an image retrieval system based on embeddings.
+This project implements an image retrieval system using both traditional methods and advanced deep learning techniques. The system allows users to input a query image and retrieve similar images from a dataset. The project also includes tools for dataset creation, processing, and management using vector databases for efficient image searches.
 
-## Files Overview
+## Features
 
-### 1. Embedding.py
-This script is responsible for generating image embeddings using the OpenCLIP embedding function. The main functionalities include:
-- **`get_single_image_embedding(image)`**: Converts a single image into an embedding using the OpenCLIP model.
-- **`read_image_from_path(path, size)`**: Reads an image from a specified file path, converts it to RGB, and resizes it.
-- **`folder_to_images(folder, size)`**: Processes all images in a specified folder into embeddings.
+- **Basic Image Retrieval**: Supports L1, L2, Cosine Similarity, and Correlation Coefficient methods.
+- **Advanced Image Retrieval**: Utilizes a pretrained CLIP model for feature extraction and enhanced search accuracy.
+- **Vector Database Integration**: Stores and queries image embeddings using a vector database (e.g., ChromaDB).
+- **Data Collection Tools**: Crawls images from websites and organizes them into datasets.
+- **Data Processing Tools**: Cleans and structures datasets for use in retrieval tasks.
 
-### 2. Traditional.py
-This script focuses on traditional image processing methods and plotting the results of image queries. The key functions include:
-- **`read_image_from_path(path, size)`**: Similar to the function in `Embedding.py`, it reads and resizes an image.
-- **`plot_results(query_path, ls_path_score, reverse)`**: Plots the results of an image query, displaying the query image alongside the most similar images from a dataset.
+## Installation
 
-### 3. VectorDatabase.py
-This script is designed to integrate with a vector database (using `chromadb`) and perform image retrieval based on embeddings. The main components include:
-- **`plot_results(image_path, files_path, results)`**: Plots the query image and its closest matches from a vector database.
-- **`embedding_search(...)`**: Uses embeddings to perform similarity searches within a vector database.
+1. **Clone the Repository**:
 
-## Getting Started
+   ```bash
+   git clone https://github.com/undertanker86/Text-Image-Retrieval.git
+   cd image-retrieval-project
+2. ** Install OpenCLIPEmbeddingFunction for version VectorDatabase and Embeddinng **
 
-### Prerequisites
-- Python 3.x
-- Required Python libraries: `numpy`, `PIL`, `matplotlib`, `chromadb`, `tqdm`
+## Project Structure
 
-### Installation
-You can install the required Python libraries using pip:
-```bash
-pip install numpy pillow matplotlib chromadb tqdm
+Embedding.py: Embedding extraction using CLIP.
+Traditional.py: Traditional image similarity measures.
+VectorDatabase.py: Vector database management.
+data_collection.py: Tools for dataset creation and processing.
+Project_Image_Retrieval.pdf: Documentation and project details.
