@@ -22,10 +22,3 @@ This project implements an image retrieval system using both traditional methods
    cd image-retrieval-project
 2. ** Install OpenCLIPEmbeddingFunction for version VectorDatabase and Embeddinng **
 
-## Project Structure
-
-Embedding.py: Embedding extraction using CLIP.
-Traditional.py: Traditional image similarity measures.
-VectorDatabase.py: Vector database management.
-data_collection.py: Tools for dataset creation and processing.
-Project_Image_Retrieval.pdf: Documentation and project details.
